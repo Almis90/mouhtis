@@ -1,0 +1,55 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+
+    <IsPackable>false</IsPackable>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.NET.Test.Sdk" Version="16.5.0" />
+    <PackageReference Include="xunit" Version="2.4.0" />
+    <PackageReference Include="xunit.runner.visualstudio" Version="2.4.0" />
+    <PackageReference Include="coverlet.collector" Version="1.2.0" />
+    <PackageReference Include="FluentAssertions" Version="6.1.0" />
+    <PackageReference Include="Moq" Version="4.16.1" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Remove="Modules\" />
+    <None Remove="Modules\Auth\" />
+    <None Remove="Modules\Auth\SignIn\" />
+    <None Remove="FluentAssertions" />
+    <None Remove="Moq" />
+    <None Remove="Modules\Auth\RefreshToken\" />
+    <None Remove="Modules\Company\" />
+    <None Remove="Modules\Company\CreateCompany\" />
+    <None Remove="Modules\Company\DeleteCompany\" />
+    <None Remove="Modules\Company\ListCompanies\" />
+    <None Remove="Modules\Company\UpdateCompany\" />
+    <None Remove="Modules\Product\" />
+    <None Remove="Modules\Product\CreateProduct\" />
+    <None Remove="Modules\Product\UpdateProduct\" />
+    <None Remove="Modules\Product\ListProduct\" />
+    <None Remove="Modules\Product\DeleteProduct\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Modules\" />
+    <Folder Include="Modules\Auth\" />
+    <Folder Include="Modules\Auth\SignIn\" />
+    <Folder Include="Modules\Auth\RefreshToken\" />
+    <Folder Include="Modules\Company\" />
+    <Folder Include="Modules\Company\CreateCompany\" />
+    <Folder Include="Modules\Company\DeleteCompany\" />
+    <Folder Include="Modules\Company\ListCompanies\" />
+    <Folder Include="Modules\Company\UpdateCompany\" />
+    <Folder Include="Modules\Product\" />
+    <Folder Include="Modules\Product\CreateProduct\" />
+    <Folder Include="Modules\Product\UpdateProduct\" />
+    <Folder Include="Modules\Product\ListProducts\" />
+    <Folder Include="Modules\Product\DeleteProduct\" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\src\Mouhtis.Core\Mouhtis.Core.csproj" />
+  </ItemGroup>
+</Project>

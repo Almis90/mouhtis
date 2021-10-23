@@ -1,0 +1,115 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netstandard2.1</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="Modules\" />
+    <None Remove="Modules\Company\" />
+    <None Remove="Modules\Company\CreateCompany\" />
+    <None Remove="Modules\Company\DeleteCompany\" />
+    <None Remove="Modules\Company\UpdateCompany\" />
+    <None Remove="Modules\Auth\" />
+    <None Remove="Modules\Auth\SignIn\" />
+    <None Remove="Modules\Product\" />
+    <None Remove="Modules\Product\CreateProduct\" />
+    <None Remove="Modules\Product\UpdateProduct\" />
+    <None Remove="Modules\Product\DeleteProduct\" />
+    <None Remove="Modules\Company\ListCompanies\" />
+    <None Remove="Modules\Product\ListProducts\" />
+    <None Remove="MediatR" />
+    <None Remove="Modules\Auth\RefreshToken\" />
+    <None Remove="FluentValidation" />
+    <None Remove="Microsoft.Extensions.Identity.Core" />
+    <None Remove="FluentResults" />
+    <None Remove="Modules\Auth\SignUp\" />
+    <None Remove="Modules\Auth\ResetPassword\" />
+    <None Remove="Modules\Auth\ChangePassword\" />
+    <None Remove="Modules\Users\" />
+    <None Remove="Modules\Users\CreateUser\" />
+    <None Remove="Modules\Users\UpdateUser\" />
+    <None Remove="Modules\Users\ListUsers\" />
+    <None Remove="Modules\Users\DeleteUser\" />
+    <None Remove="Modules\Users\SuspendResumeUser\" />
+    <None Remove="Modules\Product\SuspendResumeProduct\" />
+    <None Remove="Modules\Company\SuspendResumeCompany\" />
+    <None Remove="Modules\Category\" />
+    <None Remove="Modules\Category\CreateCategory\" />
+    <None Remove="Modules\Category\EditCategory\" />
+    <None Remove="Modules\Category\ListCategories\" />
+    <None Remove="Modules\Category\DeleteCategory\" />
+    <None Remove="Modules\Tag\" />
+    <None Remove="Modules\Tag\CreateTag\" />
+    <None Remove="Modules\Tag\UpdateTag\" />
+    <None Remove="Modules\Tag\DeleteTag\" />
+    <None Remove="Modules\Tag\ListTag\" />
+    <None Remove="Modules\Subscription\" />
+    <None Remove="Modules\Subscription\CreateSubscription\" />
+    <None Remove="Modules\Subscription\UpdateSubscription\" />
+    <None Remove="Modules\Subscription\CancelSubscription\" />
+    <None Remove="Modules\Subscription\ListSubscriptions\" />
+    <None Remove="Modules\ContactUs\" />
+    <None Remove="Modules\Auth\SignIn\Facebook\" />
+    <None Remove="Modules\Auth\SignIn\Google\" />
+    <None Remove="Modules\Auth\SignIn\Apple\" />
+    <None Remove="Modules\Auth\SignIn\LinkedIn\" />
+    <None Remove="Modules\Auth\SignIn\Microsoft\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Modules\" />
+    <Folder Include="Modules\Company\" />
+    <Folder Include="Modules\Company\CreateCompany\" />
+    <Folder Include="Modules\Company\DeleteCompany\" />
+    <Folder Include="Modules\Company\UpdateCompany\" />
+    <Folder Include="Modules\Auth\" />
+    <Folder Include="Modules\Auth\SignIn\" />
+    <Folder Include="Modules\Product\" />
+    <Folder Include="Modules\Product\CreateProduct\" />
+    <Folder Include="Modules\Product\UpdateProduct\" />
+    <Folder Include="Modules\Product\DeleteProduct\" />
+    <Folder Include="Modules\Company\ListCompanies\" />
+    <Folder Include="Modules\Product\ListProducts\" />
+    <Folder Include="Modules\Auth\RefreshToken\" />
+    <Folder Include="Modules\Auth\SignUp\" />
+    <Folder Include="Modules\Auth\ResetPassword\" />
+    <Folder Include="Modules\Auth\ChangePassword\" />
+    <Folder Include="Modules\User\" />
+    <Folder Include="Modules\User\CreateUser\" />
+    <Folder Include="Modules\User\UpdateUser\" />
+    <Folder Include="Modules\User\ListUsers\" />
+    <Folder Include="Modules\User\DeleteUser\" />
+    <Folder Include="Modules\User\SuspendUser\" />
+    <Folder Include="Modules\Product\SuspendProduct\" />
+    <Folder Include="Modules\Company\SuspendCompany\" />
+    <Folder Include="Modules\Category\" />
+    <Folder Include="Modules\Category\CreateCategory\" />
+    <Folder Include="Modules\Category\UpdateCategory\" />
+    <Folder Include="Modules\Category\ListCategories\" />
+    <Folder Include="Modules\Category\DeleteCategory\" />
+    <Folder Include="Modules\Tag\" />
+    <Folder Include="Modules\Tag\CreateTag\" />
+    <Folder Include="Modules\Tag\UpdateTag\" />
+    <Folder Include="Modules\Tag\DeleteTag\" />
+    <Folder Include="Modules\Tag\ListTags\" />
+    <Folder Include="Modules\Subscription\" />
+    <Folder Include="Modules\Subscription\CreateSubscription\" />
+    <Folder Include="Modules\Subscription\UpdateSubscription\" />
+    <Folder Include="Modules\Subscription\CancelSubscription\" />
+    <Folder Include="Modules\Subscription\ListSubscriptions\" />
+    <Folder Include="Modules\ContactUs\" />
+    <Folder Include="Modules\Auth\SignIn\Facebook\" />
+    <Folder Include="Modules\Auth\SignIn\Google\" />
+    <Folder Include="Modules\Auth\SignIn\Apple\" />
+    <Folder Include="Modules\Auth\SignIn\LinkedIn\" />
+    <Folder Include="Modules\Auth\SignIn\Microsoft\" />
+  </ItemGroup>
+  <ItemGroup>
+    <PackageReference Include="MediatR" Version="9.0.0" />
+    <PackageReference Include="FluentValidation" Version="10.3.3" />
+    <PackageReference Include="FluentResults" Version="2.5.0" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\external\Almis.SharedKernel\Almis.SharedKernel.csproj" />
+  </ItemGroup>
+</Project>
